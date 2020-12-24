@@ -1,6 +1,7 @@
 # Copyright (c) Andres Vidal.
 # Distributed under the terms of the MIT License.
 FROM arm32v7/python:3.8
+COPY qemu-arm-static /usr/bin
 
 LABEL created_by=https://github.com/andresvidal/jupyter-armv7l
 ARG wheelhouse=https://github.com/andresvidal/jupyter-armv7l/raw/master/wheelhouse
